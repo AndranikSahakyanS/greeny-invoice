@@ -28,7 +28,7 @@ a { color: var(--accent); }
 <header><span class="brand">Greeny</span><nav><a href="?lang=en" data-lang="en">English</a><a href="?lang=ru" data-lang="ru">Русский</a><a href="?lang=hy" data-lang="hy">Հայերեն</a></nav></header>
 <article id="en" lang="en">
 <h1>Privacy policy</h1>
-<p class="date">Effective from 6 November 2026</p>
+<p class="date">Effective from 12 November 2026</p>
 <section><h2>In short</h2>
 <p>Greeny is a bookkeeping program for a clinic: patients, treatments, payments, appointments and expenses. All of this is the clinic’s data. It is kept on this phone and on the clinic’s computer if the phone is connected to it.</p>
 <p>The developer of Greeny does not receive, see or pass on the data of the clinic or its patients. The app has no ads, no analytics and no tracking.</p></section>
@@ -40,6 +40,12 @@ a { color: var(--accent); }
 <section><h2>Backups and export</h2>
 <p>Without a computer, the phone makes a backup every day in the Greeny folder of the phone’s documents (on Android, Documents/Greeny). A backup can be protected with a password. Backups stay after the app is deleted; they can be deleted in the phone’s files.</p>
 <p>A backup, an Excel file or an invoice is sent only by you, through the app you choose. From then on the file is the responsibility of whoever received it.</p></section>
+<section><h2>Copies to Google Drive</h2>
+<p>If you choose, Greeny saves backup copies to your own Google Drive. For that you sign in to your Google account. Greeny gets access only to the files it created itself (the “drive.file” permission): it does not see or change any other files on your Drive. It also learns the account’s address, to show where the copies go.</p>
+<p>Greeny creates a Greeny folder on your Drive, puts copies encrypted with your password into it, reads their list and the copies themselves when you restore, and deletes old copies by the same rule as on the device. It does nothing else with your Drive.</p>
+<p>The key to your Drive is kept only on your device, in its protected storage. Copies go from the device straight to Google: the developer receives neither the copies, nor the key, nor any data of your Google account.</p>
+<p>To turn it off: “Sign out of Google Drive” in Greeny’s settings, or in your Google account (Security → Third-party apps). The copies on your Drive stay until you delete them.</p>
+<p>Greeny’s use and transfer to any other app of information received from Google APIs will adhere to the Google API Services User Data Policy, including the Limited Use requirements: https://developers.google.com/terms/api-services-user-data-policy</p></section>
 <section><h2>What the developer receives</h2>
 <p>For the subscription, the app sometimes contacts the Greeny server and sends: the subscription key; an anonymous code of the phone (a hash that does not reveal the phone itself) and a random profile number; the app’s version, language and line of work.</p>
 <p>When a trial starts, the server keeps a hash of the IP address to limit repeated trials. The address itself is not kept.</p>
@@ -52,7 +58,7 @@ a { color: var(--accent); }
 <section><h2>Permissions</h2>
 <p>Camera — to scan the computer’s QR code and to take a patient’s photo. It is on only while you do this.</p>
 <p>Local network — to reach the clinic’s computer.</p>
-<p>Internet — for the subscription server and the links you open.</p>
+<p>Internet — for the subscription server, copies to Google Drive if you turned them on, and the links you open.</p>
 <p>Storage (Android 10 only) — for backups in Documents/Greeny.</p></section>
 <section><h2>Who is responsible for patients’ data</h2>
 <p>The clinic decides what to record about patients. It is also responsible for the patients’ consent and for following its country’s laws on personal and medical data.</p>
@@ -67,7 +73,7 @@ a { color: var(--accent); }
 </article>
 <article id="ru" lang="ru">
 <h1>Политика конфиденциальности</h1>
-<p class="date">Действует с 6 ноября 2026 г.</p>
+<p class="date">Действует с 12 ноября 2026 г.</p>
 <section><h2>Коротко</h2>
 <p>Greeny — программа учёта для клиники: пациенты, лечение, оплаты, записи и расходы. Всё это — данные клиники. Они хранятся на этом телефоне и на компьютере клиники, если телефон к нему подключён.</p>
 <p>Разработчик Greeny данные клиники и пациентов не получает, не видит и никому не передаёт. В приложении нет рекламы, аналитики и отслеживания.</p></section>
@@ -79,6 +85,12 @@ a { color: var(--accent); }
 <section><h2>Резервные копии и выгрузка</h2>
 <p>Без компьютера телефон каждый день делает резервную копию в папку Greeny в документах телефона (на Android — Documents/Greeny). Копию можно защитить паролем. Копии остаются и после удаления приложения — удалить их можно в файлах телефона.</p>
 <p>Копию, файл Excel или счёт можно отправить только самому, через выбранное приложение. С этого момента за файл отвечает тот, кто его получил.</p></section>
+<section><h2>Копии в Google Диск</h2>
+<p>По желанию Greeny сохраняет резервные копии в Google Диск пользователя. Для этого вы входите в свой аккаунт Google. Greeny получает доступ только к файлам, которые создал сам (разрешение «drive.file»): остальные файлы вашего Диска он не видит и не меняет. Ещё он узнаёт адрес аккаунта, чтобы показать, куда уходят копии.</p>
+<p>Greeny создаёт на Диске папку Greeny, кладёт в неё копии, зашифрованные вашим паролем, читает их список и сами копии при восстановлении и удаляет старые копии по тому же правилу, что и на устройстве. Больше ничего он с Диском не делает.</p>
+<p>Ключ доступа к Диску хранится только на вашем устройстве, в защищённом хранилище. Копии идут с устройства прямо в Google: разработчик не получает ни копий, ни ключа, ни данных вашего аккаунта Google.</p>
+<p>Отключить: «Выйти из Google Диска» в настройках Greeny или в аккаунте Google (Безопасность → Сторонние приложения). Копии на Диске остаются, пока вы их не удалите.</p>
+<p>Использование и передача Greeny сведений, полученных от API Google, соответствуют Правилам в отношении данных пользователей сервисов API Google (Google API Services User Data Policy), включая требования ограниченного использования (Limited Use): https://developers.google.com/terms/api-services-user-data-policy</p></section>
 <section><h2>Что получает разработчик</h2>
 <p>Для подписки приложение иногда обращается к серверу Greeny и отправляет: ключ подписки; обезличенный код телефона (хэш, по нему нельзя узнать сам телефон) и случайный номер профиля; версию приложения, язык и вид деятельности.</p>
 <p>При начале пробного периода сервер сохраняет хэш IP-адреса, чтобы ограничить повторные пробные периоды. Сам адрес не сохраняется.</p>
@@ -91,7 +103,7 @@ a { color: var(--accent); }
 <section><h2>Разрешения</h2>
 <p>Камера — чтобы отсканировать QR-код компьютера и сфотографировать пациента. Включается только когда вы это делаете.</p>
 <p>Локальная сеть — чтобы связаться с компьютером клиники.</p>
-<p>Интернет — для сервера подписки и ссылок, которые вы открываете.</p>
+<p>Интернет — для сервера подписки, копий в Google Диск, если вы их включили, и ссылок, которые вы открываете.</p>
 <p>Хранилище (только Android 10) — для резервных копий в Documents/Greeny.</p></section>
 <section><h2>Кто отвечает за данные пациентов</h2>
 <p>Что записывать о пациентах, решает клиника. Она же отвечает за согласие пациентов и соблюдение законов своей страны о персональных и медицинских данных.</p>
@@ -106,7 +118,7 @@ a { color: var(--accent); }
 </article>
 <article id="hy" lang="hy">
 <h1>Գաղտնիության քաղաքականություն</h1>
-<p class="date">Գործում է 2026 թ. նոյեմբերի 6-ից</p>
+<p class="date">Գործում է 2026 թ. նոյեմբերի 12-ից</p>
 <section><h2>Համառոտ</h2>
 <p>Greeny-ն կլինիկայի հաշվառման ծրագիր է՝ պացիենտներ, բուժում, վճարումներ, գրանցումներ և ծախսեր։ Այս ամենը կլինիկայի տվյալներն են։ Դրանք պահվում են այս հեռախոսում և կլինիկայի համակարգչում, եթե հեռախոսը միացված է դրան։</p>
 <p>Greeny-ի մշակողը կլինիկայի և պացիենտների տվյալները չի ստանում, չի տեսնում և ոչ մեկին չի փոխանցում։ Հավելվածում չկան գովազդ, վերլուծություն և հետևում։</p></section>
@@ -118,6 +130,12 @@ a { color: var(--accent); }
 <section><h2>Պահուստային պատճեններ և արտահանում</h2>
 <p>Առանց համակարգչի հեռախոսն ամեն օր պահուստային պատճեն է անում հեռախոսի փաստաթղթերի Greeny թղթապանակում (Android-ում՝ Documents/Greeny)։ Պատճենը կարելի է պաշտպանել գաղտնաբառով։ Պատճենները մնում են նաև հավելվածը ջնջելուց հետո․ դրանք կարելի է ջնջել հեռախոսի ֆայլերում։</p>
 <p>Պատճենը, Excel ֆայլը կամ հաշիվը կարող եք ուղարկել միայն դուք՝ ձեր ընտրած հավելվածով։ Դրանից հետո ֆայլի համար պատասխանատու է այն ստացողը։</p></section>
+<section><h2>Պատճեններ Google Drive-ում</h2>
+<p>Ձեր ցանկությամբ Greeny-ն պահուստային պատճենները պահում է ձեր Google Drive-ում։ Դրա համար մուտք եք գործում ձեր Google հաշիվ։ Greeny-ն հասանելիություն է ստանում միայն իր իսկ ստեղծած ֆայլերին («drive.file» թույլտվություն)․ ձեր Drive-ի մյուս ֆայլերը նա չի տեսնում և չի փոխում։ Նա նաև իմանում է հաշվի հասցեն՝ ցույց տալու համար, թե ուր են գնում պատճենները։</p>
+<p>Greeny-ն Drive-ում ստեղծում է Greeny թղթապանակ, դնում է այնտեղ ձեր գաղտնաբառով գաղտնագրված պատճենները, վերականգնելիս կարդում է դրանց ցանկը և իրենք՝ պատճենները, և ջնջում է հին պատճենները նույն կանոնով, ինչ սարքում։ Drive-ի հետ նա ուրիշ ոչինչ չի անում։</p>
+<p>Drive-ի հասանելիության բանալին պահվում է միայն ձեր սարքում՝ պաշտպանված պահոցում։ Պատճենները սարքից գնում են ուղիղ Google․ մշակողը չի ստանում ո՛չ պատճենները, ո՛չ բանալին, ո՛չ ձեր Google հաշվի տվյալները։</p>
+<p>Անջատել՝ Greeny-ի կարգավորումներում «Դուրս գալ Google Drive-ից» կամ Google հաշվում (Անվտանգություն → Երրորդ կողմի հավելվածներ)։ Drive-ում պատճենները մնում են, մինչև դուք դրանք ջնջեք։</p>
+<p>Google API-ներից ստացված տեղեկությունների Greeny-ի օգտագործումը և փոխանցումը համապատասխանում են Google API ծառայությունների օգտատերերի տվյալների քաղաքականությանը (Google API Services User Data Policy), ներառյալ սահմանափակ օգտագործման (Limited Use) պահանջները՝ https://developers.google.com/terms/api-services-user-data-policy</p></section>
 <section><h2>Ինչ է ստանում մշակողը</h2>
 <p>Բաժանորդագրության համար հավելվածը երբեմն դիմում է Greeny-ի սերվերին և ուղարկում է՝ բաժանորդագրության բանալին, հեռախոսի անանուն կոդը (հեշ, որով հնարավոր չէ ճանաչել հեռախոսը) և պրոֆիլի պատահական համարը, հավելվածի տարբերակը, լեզուն և գործունեության տեսակը։</p>
 <p>Փորձաշրջանը սկսելիս սերվերը պահում է IP հասցեի հեշը՝ կրկնվող փորձաշրջանները սահմանափակելու համար։ Հասցեն ինքը չի պահվում։</p>
@@ -130,7 +148,7 @@ a { color: var(--accent); }
 <section><h2>Թույլտվություններ</h2>
 <p>Տեսախցիկ՝ համակարգչի QR կոդը սկանավորելու և պացիենտին լուսանկարելու համար։ Միանում է միայն այն ժամանակ, երբ դուք դա անում եք։</p>
 <p>Տեղային ցանց՝ կլինիկայի համակարգչի հետ կապվելու համար։</p>
-<p>Ինտերնետ՝ բաժանորդագրության սերվերի և ձեր բացած հղումների համար։</p>
+<p>Ինտերնետ՝ բաժանորդագրության սերվերի, Google Drive-ում պատճենների (եթե միացրել եք) և ձեր բացած հղումների համար։</p>
 <p>Պահոց (միայն Android 10)՝ Documents/Greeny-ում պահուստային պատճենների համար։</p></section>
 <section><h2>Ով է պատասխանատու պացիենտների տվյալների համար</h2>
 <p>Թե ինչ գրանցել պացիենտների մասին, որոշում է կլինիկան։ Նա է պատասխանատու նաև պացիենտների համաձայնության և իր երկրի՝ անձնական և բժշկական տվյալների մասին օրենքները պահպանելու համար։</p>
