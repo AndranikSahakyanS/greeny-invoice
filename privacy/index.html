@@ -49,6 +49,7 @@ a { color: var(--accent); }
 <section><h2>What the developer receives</h2>
 <p>For the subscription, the app sometimes contacts the Greeny server and sends: the subscription key; an anonymous code of the phone (a hash that does not reveal the phone itself) and a random profile number; the app’s version, language and line of work.</p>
 <p>When a trial starts, the server keeps a hash of the IP address to limit repeated trials. The address itself is not kept.</p>
+<p>If the subscription was bought on an iPhone through the App Store, the app tells the server that subscription’s App Store number and the purchase’s random mark, and the server asks Apple about its state: the plan, the term, whether it renews and whether the money was returned. This is needed for the subscription to work on the clinic’s computer too. The payment is taken by Apple; Apple does not give the developer your name, Apple ID or payment details.</p>
 <p>The app does not ask for contacts. Versions before 1.44 offered to leave them during a trial: a name, a phone number and an e-mail. If you write to or call the developer yourself — for example, to pay for a subscription — the developer keeps what you told them: the clinic’s name, your name, a phone number or an e-mail and the subscription’s number. This is needed to keep the subscription and to answer you. Only the developer of Greeny sees these details.</p>
 <p>In reply, the server sends the key’s renewal and the number of the newest version. The server runs on Cloudflare. The data of the clinic, its patients and payments is not sent to the server.</p></section>
 <section><h2>Problem reports</h2>
@@ -94,6 +95,7 @@ a { color: var(--accent); }
 <section><h2>Что получает разработчик</h2>
 <p>Для подписки приложение иногда обращается к серверу Greeny и отправляет: ключ подписки; обезличенный код телефона (хэш, по нему нельзя узнать сам телефон) и случайный номер профиля; версию приложения, язык и вид деятельности.</p>
 <p>При начале пробного периода сервер сохраняет хэш IP-адреса, чтобы ограничить повторные пробные периоды. Сам адрес не сохраняется.</p>
+<p>Если подписка оформлена на iPhone через App Store, приложение сообщает серверу номер этой подписки в App Store и случайную метку покупки, а сервер узнаёт у Apple её состояние: тариф, срок, продлевается ли она и был ли возврат денег. Это нужно, чтобы подписка работала и на компьютере клиники. Оплату принимает Apple; ваше имя, Apple ID и платёжные данные Apple разработчику не передаёт.</p>
 <p>Контакты приложение не спрашивает. Версии до 1.44 предлагали оставить их в пробный период: название, телефон и e-mail. Если вы сами пишете или звоните разработчику — например, чтобы оплатить подписку, — он сохраняет то, что вы сообщили: название клиники, имя, телефон или e-mail и номер подписки. Это нужно, чтобы вести подписку и отвечать вам. Эти сведения видит только разработчик Greeny.</p>
 <p>В ответ сервер присылает продление ключа и номер новой версии. Сервер работает на Cloudflare. Данные клиники, пациентов и оплат на сервер не отправляются.</p></section>
 <section><h2>Отчёт об ошибке</h2>
@@ -139,6 +141,7 @@ a { color: var(--accent); }
 <section><h2>Ինչ է ստանում մշակողը</h2>
 <p>Բաժանորդագրության համար հավելվածը երբեմն դիմում է Greeny-ի սերվերին և ուղարկում է՝ բաժանորդագրության բանալին, հեռախոսի անանուն կոդը (հեշ, որով հնարավոր չէ ճանաչել հեռախոսը) և պրոֆիլի պատահական համարը, հավելվածի տարբերակը, լեզուն և գործունեության տեսակը։</p>
 <p>Փորձաշրջանը սկսելիս սերվերը պահում է IP հասցեի հեշը՝ կրկնվող փորձաշրջանները սահմանափակելու համար։ Հասցեն ինքը չի պահվում։</p>
+<p>Եթե բաժանորդագրությունը ձևակերպվել է iPhone-ում՝ App Store-ի միջոցով, հավելվածը սերվերին հայտնում է այդ բաժանորդագրության App Store-ի համարը և գնման պատահական նշանը, իսկ սերվերը Apple-ից իմանում է դրա վիճակը՝ սակագինը, ժամկետը, արդյոք այն երկարաձգվում է և արդյոք գումարը վերադարձվել է։ Դա անհրաժեշտ է, որպեսզի բաժանորդագրությունն աշխատի նաև կլինիկայի համակարգչում։ Վճարումն ընդունում է Apple-ը․ ձեր անունը, Apple ID-ն և վճարային տվյալները Apple-ը մշակողին չի փոխանցում։</p>
 <p>Հավելվածը կոնտակտներ չի հարցնում։ Մինչև 1.44 տարբերակները փորձաշրջանի ընթացքում առաջարկում էին թողնել դրանք՝ անվանում, հեռախոս և e-mail։ Եթե դուք ինքներդ գրում կամ զանգում եք մշակողին, օրինակ՝ բաժանորդագրության համար վճարելու նպատակով, նա պահում է ձեր հայտնածը՝ կլինիկայի անվանումը, անունը, հեռախոսը կամ e-mail-ը և բաժանորդագրության համարը։ Դա անհրաժեշտ է բաժանորդագրությունը վարելու և ձեզ պատասխանելու համար։ Այս տվյալները տեսնում է միայն Greeny-ի մշակողը։</p>
 <p>Ի պատասխան՝ սերվերն ուղարկում է բանալու երկարաձգումը և նոր տարբերակի համարը։ Սերվերն աշխատում է Cloudflare-ում։ Կլինիկայի, պացիենտների և վճարումների տվյալները սերվեր չեն ուղարկվում։</p></section>
 <section><h2>Սխալի մասին հաշվետվություն</h2>
